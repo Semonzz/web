@@ -1,0 +1,188 @@
+/* ===== Сброс базовых отступов ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Основные настройки страницы ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Шапка ===== */
+.header {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    display: flex;          /* фото и текст в ряд */
+    align-items: center;
+    gap: 25px;
+    border-bottom: 3px solid #0070f0;   /* синяя линия как на hh */
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;      /* чтобы фото не сплющилось */
+    border-radius: 50%;     /* круглое фото */
+}
+
+.header-info h1 {
+    font-size: 28px;
+    color: #000;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #0070f0;         /* синий цвет как на hh */
+    margin-top: 5px;
+}
+
+.city {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* ===== Контейнер — центрируем контент ===== */
+.container {
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+/* ===== Каждый блок-секция ===== */
+.section {
+    background-color: #ffffff;
+    padding: 20px 25px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* ===== Опыт работы и образование ===== */
+.job {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid #0070f0;   /* синяя полоска слева */
+}
+
+.job:last-child {
+    margin-bottom: 0;
+}
+
+.job h3 {
+    font-size: 17px;
+    color: #000;
+}
+
+.job-company {
+    font-size: 15px;
+    color: #555;
+    margin-top: 3px;
+}
+
+.job-dates {
+    font-size: 13px;
+    color: #999;
+    margin-top: 3px;
+}
+
+.job ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.job ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* ===== Навыки — теги-плашки ===== */
+.skills {
+    display: flex;
+    flex-wrap: wrap;       /* перенос на новую строку */
+    gap: 10px;
+}
+
+.skill {
+    background-color: #e8f0fe;
+    color: #0070f0;
+    padding: 6px 14px;
+    border-radius: 20px;   /* овальная форма */
+    font-size: 14px;
+}
+
+/* ===== Контакты ===== */
+.contacts {
+    list-style: none;      /* убираем точки у списка */
+}
+
+.contacts li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.contacts a {
+    color: #0070f0;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Подвал ===== */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 13px;
+}
+
+/* ===== Адаптив для мобильных устройств ===== */
+@media (max-width: 600px) {
+    /* Шапка: фото сверху, текст снизу */
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    .header-info h1 {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    /* Уменьшаем отступы и шрифты */
+    .container {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    .section h2 {
+        font-size: 18px;
+    }
+
+    /* Навыки: чуть мельче теги */
+    .skill {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+}
