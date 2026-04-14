@@ -1,175 +1,171 @@
-/* ===== Сброс базовых отступов ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== Основные настройки страницы ===== */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+    font-family: "Courier New", monospace;
+    font-weight: 600;
+    background-color: #fff9e6;
+    color: #000000;
+    line-height: 1.5;
+    padding: 15px;
 }
 
-/* ===== Шапка ===== */
+h1, h2, h3 {
+    font-weight: 800;
+}
+
 .header {
-    background-color: #ffffff;
-    padding: 30px 20px;
-    display: flex;          /* фото и текст в ряд */
+    background-color: #ffc163;
+    border: 3px solid #ca3900;
+    padding: 20px;
+    display: flex;
     align-items: center;
-    gap: 25px;
-    border-bottom: 3px solid #0070f0;   /* синяя линия как на hh */
+    gap: 20px;
+    margin-bottom: 25px;
 }
 
 .photo {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;      /* чтобы фото не сплющилось */
-    border-radius: 50%;     /* круглое фото */
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 3px solid #e65100;
 }
 
 .header-info h1 {
-    font-size: 28px;
-    color: #000;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .subtitle {
-    font-size: 20px;
-    color: #0070f0;         /* синий цвет как на hh */
-    margin-top: 5px;
+    font-size: 16px;
+    color: #ff0000;
+    font-weight: 700;
+    margin: 5px 0;
 }
 
-.city {
-    font-size: 14px;
-    color: #888;
-    margin-top: 5px;
-}
-
-/* ===== Контейнер — центрируем контент ===== */
 .container {
-    max-width: 800px;
-    margin: 25px auto;
-    padding: 0 15px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-/* ===== Каждый блок-секция ===== */
 .section {
-    background-color: #ffffff;
-    padding: 20px 25px;
-    margin-bottom: 15px;
-    border-radius: 8px;
+    border: 2px solid #333333;
+    padding: 18px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section p {
+    font-weight: 600;
 }
 
 .section h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e0e0e0;
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #313131;
+    text-transform: uppercase;
 }
 
-/* ===== Опыт работы и образование ===== */
 .job {
-    margin-bottom: 20px;
-    padding-left: 15px;
-    border-left: 3px solid #0070f0;   /* синяя полоска слева */
-}
-
-.job:last-child {
-    margin-bottom: 0;
+    background-color: #ffffff;
+    border: 2px solid #333333;
+    padding: 12px 15px;
+    margin-bottom: 12px;
 }
 
 .job h3 {
-    font-size: 17px;
-    color: #000;
+    font-size: 16px;
+    margin-bottom: 4px;
 }
 
 .job-company {
-    font-size: 15px;
-    color: #555;
-    margin-top: 3px;
+    color: #d32f2f;
+    font-size: 14px;
+    margin: 3px 0;
+    font-weight: 700;
 }
 
 .job-dates {
-    font-size: 13px;
-    color: #999;
-    margin-top: 3px;
+    color: #5a5a5a;
+    font-size: 12px;
+    font-family: monospace;
+    margin: 3px 0 8px;
+    font-weight: 600;
 }
 
 .job ul {
-    margin-top: 10px;
     padding-left: 20px;
 }
 
 .job ul li {
-    margin-bottom: 5px;
     font-size: 14px;
+    margin: 3px 0;
+    list-style-type: square;
+    font-weight: 600;
 }
 
-/* ===== Навыки — теги-плашки ===== */
 .skills {
     display: flex;
-    flex-wrap: wrap;       /* перенос на новую строку */
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .skill {
-    background-color: #e8f0fe;
-    color: #0070f0;
-    padding: 6px 14px;
-    border-radius: 20px;   /* овальная форма */
+    background-color: #343434;
+    color: #ffffff;
+    padding: 5px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    border: 2px solid #000000;
+}
+
+.contacts {
+    list-style: none;
     font-size: 14px;
 }
 
-/* ===== Контакты ===== */
-.contacts {
-    list-style: none;      /* убираем точки у списка */
-}
-
 .contacts li {
-    margin-bottom: 8px;
-    font-size: 15px;
+    margin: 8px 0;
+    padding: 8px;
+    background-color: #ffffff;
+    border-left: 4px solid #323232;
+    font-weight: 600;
 }
 
 .contacts a {
-    color: #0070f0;
+    color: #1565c0;
     text-decoration: none;
+    font-weight: 700;
 }
 
 .contacts a:hover {
     text-decoration: underline;
+    color: #d32f2f;
 }
 
-/* ===== Подвал ===== */
-.footer {
-    text-align: center;
-    padding: 20px;
-    color: #999;
-    font-size: 13px;
-}
-
-/* ===== Адаптив для мобильных устройств ===== */
-@media (max-width: 600px) {
-    /* Шапка: фото сверху, текст снизу */
+@media (max-width: 550px) {
     .header {
         flex-direction: column;
         text-align: center;
-        padding: 20px 15px;
+    }
+
+    .photo {
+        width: 70px;
+        height: 70px;
     }
 
     .header-info h1 {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .subtitle {
-        font-size: 16px;
-    }
-
-    /* Уменьшаем отступы и шрифты */
-    .container {
-        margin: 15px auto;
-        padding: 0 10px;
+        font-size: 14px;
     }
 
     .section {
@@ -177,12 +173,16 @@ body {
     }
 
     .section h2 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
-    /* Навыки: чуть мельче теги */
     .skill {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .contacts li {
         font-size: 13px;
-        padding: 5px 10px;
+        padding: 6px;
     }
 }
